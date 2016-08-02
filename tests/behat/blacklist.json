@@ -1,0 +1,34 @@
+{
+  "contexts": [
+    "grade/tests/behat/behat_grade.php"
+  ],
+  "features": [
+    "auth/tests/behat/login.feature",
+    "grade/tests/behat/grade_hidden_items.feature",
+    "grade/tests/behat/grade_override_letter.feature",
+    "grade/tests/behat/grade_item_validation.feature",
+    "grade/tests/behat/grade_point_maximum.feature",
+    "grade/tests/behat/grade_aggregation_changes.feature",
+    "grade/tests/behat/grade_aggregation.feature",
+    "grade/tests/behat/grade_letter_boundary_20160518.feature",
+    "grade/tests/behat/grade_scales_aggregation.feature",
+    "grade/tests/behat/grade_letter_boundary.feature",
+    "grade/tests/behat/grade_scales.feature",
+    "grade/tests/behat/grade_mingrade.feature",
+    "grade/tests/behat/grade_average.feature",
+    "grade/tests/behat/grade_calculated_grade_items_20150627.feature",
+    "grade/tests/behat/grade_single_item_scales.feature",
+    "grade/tests/behat/grade_to_pass.feature",
+    "grade/tests/behat/grade_calculated_grade_items.feature",
+    "grade/tests/behat/grade_minmax.feature",
+    "grade/tests/behat/grade_natural_exclude_empty_20150619.feature",
+    "grade/tests/behat/grade_calculated_weights.feature",
+    "grade/tests/behat/grade_natural_exclude_empty.feature",
+    "grade/tests/behat/grade_category_validation.feature",
+    "grade/tests/behat/grade_contribution_with_extra_credit.feature",
+    "grade/tests/behat/grade_natural_normalisation_20150619.feature",
+    "grade/tests/behat/grade_grade_minmax_change.feature",
+    "grade/tests/behat/grade_UI_settings.feature",
+    "grade/tests/behat/grade_view.feature"
+  ]
+}
