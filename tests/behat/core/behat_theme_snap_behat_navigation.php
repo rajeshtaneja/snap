@@ -14,6 +14,24 @@ require_once(__DIR__ . '/../../../../../lib/tests/behat/behat_navigation.php');
 class behat_theme_snap_behat_navigation extends behat_navigation {
 
     /**
+     * Click link in navigation tree that matches the text in parentnode/s (seperated using greater-than character if more than one)
+     *
+     * @throws ExpectationException
+     * @param string $nodetext navigation node to click.
+     * @param string $parentnodes comma seperated list of parent nodes.
+     * @return void
+     */
+    public function i_navigate_to_node_in($nodetext, $parentnodes) {
+        $this->resize_window('large');
+        $this->execute("behat_general::i_click_on", array('#fixy-close', 'css_element'));
+
+        $this->execute('behat_general::click_link', 'admin-menu-trigger');
+
+        parent::i_navigate_to_node_in($nodetext, $parentnodes);
+        $this->resize_window('medium');
+    }
+
+    /**
      * Click on an entry in the user menu.
      *
      * @param string $nodetext
@@ -26,7 +44,7 @@ class behat_theme_snap_behat_navigation extends behat_navigation {
         $this->execute("behat_general::click_link", array("View your profile"));
 
         if ($nodetext !== "Profile") {
-            $this->execute("behat_general::click_link", array($nodetext));
+            $this->execute("behat_general::click_link", $nodetext);
         }
     }
 }

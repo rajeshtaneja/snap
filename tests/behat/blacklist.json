@@ -1,6 +1,8 @@
 {
   "contexts": [
-    "grade/tests/behat/behat_grade.php"
+    "behat_grade",
+    "behat_navigation",
+    "behat_auth"
   ],
   "features": [
     "auth/tests/behat/login.feature",
